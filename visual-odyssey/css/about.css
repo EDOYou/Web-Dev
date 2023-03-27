@@ -1,0 +1,258 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+} */
+
+body {
+  background-image: url("../images/pexels-ivan-siarbolin-3869037.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+section#about {
+  margin-top: 50px;
+  color: #fff;
+  /* font-style: italic; */
+  column-count: 3;
+  column-gap: 40px;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  height: 100px;
+  /* justify-content: space-between; */
+  /* background-color:#c6364b; */
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav .logo {
+  height: 50px;
+  width: 150px;
+  float: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+}
+
+a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #999;
+  text-decoration: none;
+}
+
+a {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-decoration: none;
+  transition: color 0.1s, background-color 0.1s;
+}
+
+a {
+  position: relative;
+  display: block;
+  padding: 16px 0;
+  margin: 0 12px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+  color: #000;
+}
+
+a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.1s, transform 0.2s ease-out;
+}
+
+/* a:active::before {
+  background-color: #000;
+} */
+a:not(.quote .author-name):hover::before,
+a:not(.quote .author-name):active::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+/* nav ul {
+	display: flex;
+	justify-content:right;
+	align-items: center;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	font-weight: bold;
+	font-size: 1.2rem;
+	transition: all 0.3s ease;
+}
+
+nav a:hover {
+	color: #c6364b;
+} */
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section#about {
+  margin-top: 50px;
+  color: #fff;
+  /* font-style: italic; */
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer .footer_logo {
+  height: 50px;
+  width: 150px;
+  float: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+}
+
+/* .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  display: block;
+  margin-right: 10px;
+  color: #333;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #c6364b;
+} */
+
+

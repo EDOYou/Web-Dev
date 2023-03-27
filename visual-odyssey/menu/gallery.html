@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/gallery.css" />
+    <!--To display the social media icons, you'll need to include the Font Awesome library.-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="../javascript/gallery.js"></script>
+    <title>Art Gallery</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Art Gallery</h1>
+    </header>
+    <main>
+      <section class="controls">
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Search artworks..." />
+        </div>
+        <div class="filter-container">
+          <label for="category">Filter by Category:</label>
+          <select id="category">
+            <option value="all">All</option>
+            <option value="abstract">Abstract</option>
+            <option value="landscape">Landscape</option>
+            <option value="portrait">Portrait</option>
+          </select>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="artwork" data-category="abstract">
+          <img
+            src="../images/artworks/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+            alt="Starry Night"
+          />
+          <h4>BY Vincent van GoghAntonio</h4>
+          <p>
+            <b>The Starry Night</b> - it depicts the view from the east-facing
+            window of his asylum room at Saint-Rémy-de-Provence, just before
+            sunrise, with the addition of an imaginary village.
+          </p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <!-- Add more artwork divs as needed -->
+        <div class="artwork" data-category="Portrait">
+          <img
+            src="../images/artworks/1665_Girl_with_a_Pearl_Earring.jpg"
+            alt="Girl With A Pearl Earring"
+          />
+          <h4>BY Johannes Vermeer</h4>
+          <p>
+            <b>Girl With A Pearl Earring</b> - an oil Dutch Golden Age painting.
+          </p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <!-- Add more artwork divs as needed -->
+        <div class="artwork" data-category="portrait">
+          <img
+            src="../images/artworks/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg"
+            alt="The Birth of Venus"
+          />
+          <h4>BY Sandro Botticelli</h4>
+          <p>
+            <b>The Birth of Venus </b> - depicts the goddess Venus arriving at
+            the shore after her birth, when she had emerged from the sea
+            fully-grown.
+          </p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="artwork" data-category="abstract">
+          <img
+            src="../images/artworks/Las_Meninas,_by_Diego_Velázquez,_from_Prado_in_Google_Earth.jpg"
+            alt="Las Meninas"
+          />
+          <h4>BY Diego Velázquez</h4>
+          <p><b>Las Meninas</b> - for 'The Ladies-in-waiting'</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="artwork" data-category="abstract">
+          <img
+            src="../images/artworks/Michelangelo_-_Creation_of_Adam_(cropped).jpg"
+            alt="The Creation of Adam"
+          />
+          <h4>BY Michelangelo</h4>
+          <p>
+            <b>The Creation of Adam</b> - illustrates the Biblical creation
+            narrative from the Book of Genesis in which God gives life to Adam,
+            the first man.
+          </p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="artwork" data-category="portrait">
+          <img
+            src="../images/artworks/Edvard_Munch,_1893,_The_Scream,_oil,_tempera_and_pastel_on_cardboard,_91_x_73_cm,_National_Gallery_of_Norway.jpg"
+            alt="The Scream"
+          />
+          <h4>BY Edvard Munch</h4>
+          <p>
+            <b>The Scream</b> - the agonized face in the painting has become one
+            of the most iconic images of art, seen as symbolizing the anxiety of
+            the human condition.
+          </p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="artwork" data-category="portrait">
+          <img src="../images/artworks/PicassoGuernica.jpg" alt="Guernica" />
+          <h4>BY Pablo Picasso</h4>
+          <p>
+            <b>Guernica</b> - portrays the suffering wrought by violence and
+            chaos.
+          </p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="artwork" data-category="abstract">
+          <img
+            src="../images/artworks/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg"
+            alt="The Kiss"
+          />
+          <h4>BY Gustav Klimt</h4>
+          <p>
+            <b>The Kiss</b> - depicts a couple embracing each other, their
+            bodies entwined in elaborate beautiful robes decorated in a style
+            influenced by the contemporary Art Nouveau style and the organic
+            forms of the earlier Arts and Crafts movement.
+          </p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </section>
+      <section class="load-more">
+        <button id="loadMore">Load More</button>
+      </section>
+      <div id="lightbox" class="lightbox hidden">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" />
+        <div class="caption"></div>
+      </div>
+    </main>
+    <button id="backToTop" class="back-to-top hidden">&uarr;</button>
+
+    <footer>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+      </div>
+      <p>&copy; 2023 Art Gallery. All rights reserved.</p>
+      <button class="back-to-top">Back to Top</button>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,297 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #034774;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* h1 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    font-weight: 500;
+}
+
+.success-message {
+    font-weight: 500;
+    background-color: #e8f5e9;
+    color: #4caf50;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 1px solid #c8e6c9;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #5d3a9b;
+    outline: none;
+} */
+
+main {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form input[type="checkbox"],
+.contact-form input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.contact-form input[type="submit"],
+.contact-form input[type="reset"] {
+  background-color: #053e6d;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover,
+.contact-form input[type="reset"]:hover {
+  background-color: #490202;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  font-size: calc(0.8rem + 0.5vw);
+}
+
+nav .logo {
+  width: 200px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 0px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+}
+
+a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #999;
+  text-decoration: none;
+}
+
+a {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-decoration: none;
+  transition: color 0.1s, background-color 0.1s;
+}
+
+a {
+  position: relative;
+  display: block;
+  padding: 16px 0;
+  margin: 0 12px;
+  letter-spacing: 1px;
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+  color: #000;
+}
+
+a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.1s, transform 0.2s ease-out;
+}
+
+a:not(.footer .footer-container .footer-links):hover::before,
+a:not(.footer):active::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+/* Table configuration */
+/* Existing table styles */
+
+/* Add a unique artistic background */
+.contact-info {
+  background-image: url("../images/artworks/pexels-rafael-guajardo-604684.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(10, 1, 1, 0.3);
+  margin-top: 2rem;
+  color:#ffffff;
+}
+
+/* Style the table cells */
+.contact-info th,
+.contact-info td {
+  padding: 1rem;
+  text-align: left;
+  color: #ffffff; /* Change the text color to white for better contrast */
+}
+
+/* Add a subtle hover effect to table rows */
+.contact-info tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#contactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container {
+  /* Add any additional styles for the form container */
+}
+
+.table-container {
+  /* Add any additional styles for the table container */
+}
+
+footer {
+  background-color: #333;
+  color: #ffffff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-copyright {
+  font-size: 0.875rem;
+}
+
+
+.social-icons {
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  color: #ffffff;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0d2f8a;
+}
