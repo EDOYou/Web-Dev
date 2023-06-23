@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Impact of Artificial Intelligence on Web Development</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>The Impact of Artificial Intelligence on Web Development</h1>
+    </header>
+    <section class="main-content">
+      <h2>Introduction to Artificial Intelligence (AI)</h2>
+      <p>
+        AI is a branch of computer science that aims to imbue software with the
+        ability to analyze its environment using either predetermined rules and
+        search algorithms, or pattern recognizing machine learning models, and
+        make decisions based on those analyses. For more detailed information,
+        have a look at the
+        <a
+          href="https://plato.stanford.edu/entries/artificial-intelligence/"
+          target="_blank"
+          >Stanford Encyclopedia's in-depth explanation of AI.</a
+        >
+      </p>
+      <figure class="content-image">
+        <img
+          src="images/istockphoto-1306235479-612x612.jpg"
+          alt="An example of AI"
+        />
+        <figcaption>Figure 1: Face recognition AI</figcaption>
+      </figure>
+      <h2>The Role of AI in Web Development</h2>
+      <p>
+        AI has a significant impact on web development, from automating mundane
+        tasks to personalizing user experience. This includes technologies like
+        <a href="https://www.tensorflow.org/" target="_blank">TensorFlow</a> for
+        building AI models, and
+        <a href="https://cloud.google.com/vision" target="_blank"
+          >Google Cloud Vision API</a
+        >
+        for image recognition and processing.
+      </p>
+      <figure class="content-image">
+        <img
+          src="images/ways-ai-is-being-used-in-web-development.jpg"
+          alt="AI in Web Development"
+        />
+        <figcaption>Figure 2: AI in Web Development</figcaption>
+      </figure>
+      <h2>How AI is Transforming Web Development</h2>
+      <p>
+        From simplifying coding to personalizing user experience, AI is
+        transforming web development in significant ways. This
+        <a
+          href="https://www.forbes.com/sites/forbestechcouncil/2019/03/11/how-ai-is-transforming-web-development/"
+          target="_blank"
+          >Forbes article</a
+        >
+        explores how AI is reshaping the industry.
+      </p>
+      <p>
+        Here's a brief video illustrating the impact of AI:
+      </p>
+      <div class="content-video">
+        <video controls width="100%">
+          <source src="videos/Preparing For AI's Impact.mp4" type="video/mp4" />
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+      </div>
+      <h2>Conclusion</h2>
+      <p>
+        Artificial Intelligence has revolutionized web development, opening up
+        new possibilities for developers and businesses alike. With the help of
+        AI, we can create more efficient, personalized, and intuitive web
+        applications.
+      </p>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <h3>References:</h3>
+        <ol>
+          <li>
+            <a
+              href="https://plato.stanford.edu/entries/artificial-intelligence/"
+              target="_blank"
+              >Stanford Encyclopedia: Artificial Intelligence</a
+            >
+          </li>
+          <li>
+            <a href="https://www.tensorflow.org/" target="_blank"
+              >TensorFlow: An end-to-end open source platform for machine
+              learning</a
+            >
+          </li>
+          <li>
+            <a href="https://cloud.google.com/vision" target="_blank"
+              >Google Cloud Vision API</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.forbes.com/sites/forbestechcouncil/2019/03/11/how-ai-is-transforming-web-development/"
+              target="_blank"
+              >Forbes: How AI Is Transforming Web Development</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=35nC0AtdlJE"
+              target="_blank"
+              >YouTube: AI in Web Development Video</a
+            >
+          </li>
+        </ol>
+        <p>© <span id="year"></span> All rights reserved.</p>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          Top
+        </button>
+      </div>
+    </footer>
+
+    <script>
+      var mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>
