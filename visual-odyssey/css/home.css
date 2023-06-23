@@ -5,12 +5,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* header {
-	background-color: #fff;
-	padding: 100px;
-	text-align: center;
-} */
-
 #hero {
   width: 100%;
   height: 100vh;
@@ -109,7 +103,6 @@ nav ul li a {
   z-index: -1;
 }
 
-/* We are adding aspect-ration so it will fit all screen size */
 @media (min-aspect-ratio: 2/10) {
   .back-video {
     width: 100%;
@@ -123,12 +116,6 @@ nav ul li a {
     height: 100%;
   }
 }
-
-/* header {
-	background-color: #fff;
-	padding: 100px;
-	text-align: center;
-} */
 
 a {
   display: block;
@@ -182,9 +169,6 @@ a::before {
   transition: color 0.1s, transform 0.2s ease-out;
 }
 
-/* a:active::before {
-  background-color: #000;
-} */
 a:not(.quote .author-name):hover::before,
 a:not(.quote .author-name):active::before {
   transform-origin: left top;
@@ -197,17 +181,22 @@ footer {
   background: #111;
   height: auto;
   width: 100vw;
-  font-family: "Open Sans";
+  font-family: "Roboto", sans-serif;
   padding-top: 40px;
   color: #fff;
 }
 
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #ddd;
+}
+
+.footer-content p:first-child {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .footer-content h3 {
@@ -260,6 +249,7 @@ footer {
   font-size: 14px;
   word-spacing: 2px;
   text-transform: capitalize;
+  color: #ddd;
 }
 
 .footer-bottom span {

@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/contact.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/contact.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
     <script src="../javascript/contact.js"></script>
     <title>Contact</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -23,106 +26,123 @@
       </ul>
     </nav>
     <header>
-        <h1>Contact Us</h1>
+      <h1>Contact Us</h1>
     </header>
     <main>
-        <section class="contact-info">
-            <p>
-                We value our customers' feedback and are always looking for ways to improve our service. If you have any questions, comments, or concerns, please don't hesitate to get in touch. You can contact us using the form below, and we will respond as soon as possible.
-            </p>
-        </section>
-        <section id="contactSection" class="contact-form">
-            <div class="form-container">
-            <form id="contactForm">
+      <section class="contact-info">
+        <p>
+          We value our customers' feedback and are always looking for ways to
+          improve our service. If you have any questions, comments, or concerns,
+          please don't hesitate to get in touch. You can contact us using the
+          form below, and we will respond as soon as possible.
+        </p>
+      </section>
+      <section id="contactSection" class="contact-form">
+        <div class="form-container">
+          <div id="contactForm">
             <div id="successMessage" class="success-message hidden"></div>
             <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-                <br>
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" required>
-                <br>
-                <label for="message">Message:</label>
-                <textarea id="message" required></textarea>
-                <br>
-                <label for="newsletter">
-                    <input type="checkbox" id="newsletter">
-                    Sign me up for the newsletter
-                </label>
-                <br>
-                <p>How did you hear about us?</p>
-                <label>
-                    <input type="radio" name="source" value="search_engine" required>
-                    Search engine
-                </label>
-                <label>
-                    <input type="radio" name="source" value="social_media" required>
-                    Social media
-                </label>
-                <label>
-                    <input type="radio" name="source" value="word_of_mouth" required>
-                    Word of mouth
-                </label>
-                <br>
-                <label for="suggestions">Please let us know how we can improve our service:</label>
-                <textarea id="suggestions"></textarea>
-                <br>
-                <input type="reset" value="Reset">
-                <input type="submit" value="Submit">
+              <label for="name">Name:</label>
+              <input type="text" id="name" required />
+              <br />
+              <label for="email">Email:</label>
+              <input type="email" id="email" required />
+              <br />
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" required />
+              <br />
+              <label for="message">Message:</label>
+              <textarea id="message" required></textarea>
+              <br />
+              <label for="newsletter">
+                <input type="checkbox" id="newsletter" />
+                Sign me up for the newsletter
+              </label>
+              <br />
+              <p>How did you hear about us?</p>
+              <label>
+                <input
+                  type="radio"
+                  name="source"
+                  value="search_engine"
+                  required
+                />
+                Search engine
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="source"
+                  value="social_media"
+                  required
+                />
+                Social media
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="source"
+                  value="word_of_mouth"
+                  required
+                />
+                Word of mouth
+              </label>
+              <br />
+              <label for="suggestions"
+                >Please let us know how we can improve our service:</label
+              >
+              <textarea id="suggestions"></textarea>
+              <br />
+              <input type="reset" value="Reset" />
+              <input type="submit" value="Submit" />
             </form>
-            </form>
-            </div>
+          </div>
+        </div>
 
-            <div class="table-container">
-            <table class="contact-info">
-    <!-- Your existing table code -->
-    <caption>Contact Details</caption>
-    <thead>
-      <tr>
-        <th>Office</th>
-        <th>Phone</th>
-        <th>Email</th>
-        <th>Opening Hours</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Erkel u. 4</td>
-        <td>+36 (70) 222-0202</td>
-        <td>ktaghiyev01@gmail.com</td>
-        <td>Mon-Fri: 12am-6pm</td>
-      </tr>
-      <!-- Add more rows as needed -->
-    </tbody>
-  </table>
-  </div>
-        </section>
+        <div class="table-container">
+          <table class="contact-info">
+            <caption>
+              Contact Details
+            </caption>
+            <thead>
+              <tr>
+                <th>Office</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Opening Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Erkel u. 4</td>
+                <td>+36 (70) 222-0202</td>
+                <td>ktaghiyev01@gmail.com</td>
+                <td>Mon-Fri: 12am-6pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-links">
-      <a href="#">About Us</a>
-      <a href="#">FAQ</a>
-      <a href="#">Terms & Conditions</a>
-      <a href="#">Privacy Policy</a>
-    </div>
-    <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-pinterest"></i></a>
+      <div class="footer-container">
+        <div class="footer-links">
+          <a href="#">About Us</a>
+          <a href="#">FAQ</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <div class="footer-copyright">
+          &copy; 2023 Art Gallery. All Rights Reserved.
+        </div>
       </div>
-    <div class="footer-copyright">
-      &copy; 2023 Art Gallery. All Rights Reserved.
-    </div>
-  </div>
-</footer>
-
-
-
-</body>
+    </footer>
+  </body>
 </html>
